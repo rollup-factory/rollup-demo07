@@ -1,1 +1,1 @@
-ts
+rollup-plugin-terser
