@@ -3,7 +3,7 @@ System.register('A', [], (function () {
   return {
     execute: (function () {
 
-      const sayHello = (message) => {
+      var sayHello = function sayHello(message) {
         alert(message);
       };
 

@@ -1,4 +1,4 @@
-const sayHello = (message) => {
+var sayHello = function sayHello(message) {
   alert(message);
 };
 

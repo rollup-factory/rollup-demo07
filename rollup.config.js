@@ -1,4 +1,6 @@
 // rollup.config.js
+import babel from 'rollup-plugin-babel'
+
 export default {
   input: "src/main.js",
   output: [{
@@ -27,4 +29,9 @@ export default {
     name: "A",
     sourcemap: true,
   }],
+  plugins: [
+    babel({
+      exclude: 'node_modules'
+    })
+  ]
 };
