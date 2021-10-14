@@ -36,6 +36,12 @@ export default {
       name: "A",
       sourcemap: true,
     },
+    {
+      file: "dist/bundle.iife.js",
+      format: "iife",
+      name: "A",
+      sourcemap: true,
+    },
   ],
   plugins: [
     resolve(),
@@ -44,4 +50,5 @@ export default {
       exclude: "node_modules",
     }),
   ],
+  external: ['lodash']
 };

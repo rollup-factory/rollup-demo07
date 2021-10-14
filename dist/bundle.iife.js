@@ -1,4 +1,5 @@
-define(['lodash'], (function (_) { 'use strict';
+(function (_) {
+  'use strict';
 
   function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -12,5 +13,5 @@ define(['lodash'], (function (_) { 'use strict';
 
   sayHello("Hello from Rollup" + arr);
 
-}));
-//# sourceMappingURL=bundle.amd.js.map
+})(_);
+//# sourceMappingURL=bundle.iife.js.map
