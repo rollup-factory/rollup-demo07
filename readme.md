@@ -1,1 +1,1 @@
-rollup-plugin-terser
+@rollup/plugin-babel

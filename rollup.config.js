@@ -1,5 +1,5 @@
 // rollup.config.js
-import babel from "rollup-plugin-babel";
+import babel from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript"
@@ -49,9 +49,7 @@ export default {
     typescript(),
     resolve(),
     commonjs(),
-    babel({
-      exclude: "node_modules",
-    }),
+    babel({ babelHelpers: 'bundled' }),
     terser()
   ],
   external: ['lodash']
